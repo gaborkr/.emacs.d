@@ -31,6 +31,7 @@
 ;;(require 'init-markdown)
 ;;(require 'init-ess)
 ;(require 'init-helm)
+(require 'init-projectile)
 (require 'init-erlang)
 (require 'init-neotree)
 
