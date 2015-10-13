@@ -28,6 +28,9 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
+
 ;; use Shift+arrow_keys to move cursor around split panes
 (windmove-default-keybindings)
 
