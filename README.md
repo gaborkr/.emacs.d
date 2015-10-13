@@ -5,6 +5,7 @@ This configuration gives you a simple yet very powerful setup for software devel
 * Neotree for a directory tree browser
 * Zenburn color theme
 * Smart completion settings
+* Projectile
 
 ## Install
 
@@ -15,6 +16,7 @@ Install Emacs on your platform, and clone this repo to your home directory. Star
 * ido-vertical-mode
 * helm
 * neotree
+* projectile
 
 Restart Emacs and enjoy!
 
