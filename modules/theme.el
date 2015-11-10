@@ -17,5 +17,6 @@
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
 
-(provide 'theme)
+(setq-default frame-title-format "%b (%f)")
 
+(provide 'theme)

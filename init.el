@@ -1,7 +1,12 @@
 
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "https://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.org/packages/")))
+;; Define package repositories
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives
+             '("tromey" . "http://tromey.com/elpa/") t)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 (package-initialize)
 (when (not package-archive-contents)
@@ -22,18 +27,37 @@
 
 (add-to-list 'load-path modules-dir)
 
+(defvar my-packages
+  '(
+    smex
+    ido-ubiquitous
+    ido-vertical-mode
+    helm
+    neotree
+    projectile
+    edts
+    paredit
+    clojure-mode
+    clojure-mode-extra-font-locking
+    cider
+    tagedit
+))
+
+(dolist (p my-packages)
+  (when (not (package-installed-p p))
+    (package-install p)))
+
 (require 'functions)
 (require 'keys)
 (require 'options)
 (require 'theme)
 (require 'init-ido)
-;;(require 'init-elisp)
-;;(require 'init-markdown)
-;;(require 'init-ess)
-;(require 'init-helm)
+(require 'init-paredit)
+(require 'init-clojure)
 (require 'init-projectile)
 (require 'init-erlang)
 (require 'init-neotree)
+(require 'init-js)
 
 (message "Hi!")
 (custom-set-variables

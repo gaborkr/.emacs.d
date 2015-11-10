@@ -1,9 +1,11 @@
 ;; Save here instead of littering current directory with emacs backup files
- (setq backup-directory-alist
-            `((".*" . ,temporary-file-directory)))
+(setq backup-directory-alist
+            `(("." . ,(concat user-emacs-directory "backups"))))
+(setq auto-save-default nil)
 
-(setq auto-save-file-name-transforms
-            `((".*" ,temporary-file-directory t)))
+(setq create-lockfiles nil)
+
+(global-linum-mode)
 
 (require 'paren)
     (set-face-background 'show-paren-match (face-background 'default))
