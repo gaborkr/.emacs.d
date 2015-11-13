@@ -27,12 +27,14 @@ Top tip: create a .edts file in your project root, and add something like:
 :name "APP_app"
 :node-name "APP_edts"
 :lib-dirs '("lib" "deps")
+:erlang-cookie "APP"
+:start-command "erl OPTIONS -s APP -sname APP_edts"
 ```
 
-where APP is your app name. Edts will start a new Erlang node with _edts, so it will not collide with your original app that you might want to run on its own.
+where APP is your app name. Edts will start a new Erlang node with _edts, so it will not collide with your original app that you might want to run on its own. The start command should be the same the way you start your application normally.
 
 ## For **Clojure**
 
 The config file comes straight from [Clojure the Brave](https://www.nostarch.com/clojure) - cheers!
 
-Paredit mode is enabled by default.
+Paredit mode is enabled by default. C-left/C-right will be disabled for paredit because I'm addicted to using these keys for moving across words...
