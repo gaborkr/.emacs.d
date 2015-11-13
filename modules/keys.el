@@ -34,5 +34,8 @@
 ;; use Shift+arrow_keys to move cursor around split panes
 (windmove-default-keybindings)
 
+;; zoom window functionality - yay!
+(define-key global-map (kbd "C-|") 'toggle-windows-split)
+
 (provide 'keys)
 

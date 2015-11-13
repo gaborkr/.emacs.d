@@ -19,3 +19,5 @@ edts/
 *.swp
 smex-items
 projectile-bookmarks.eld
+cider-history
+backups

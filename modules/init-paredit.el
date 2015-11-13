@@ -14,8 +14,4 @@
 (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
 
-; Does this work?
-;(eval-after-load 'paredit-mode
-;  '(define-key paredit-mode-map (kbd "C-right") nil))
-
 (provide 'init-paredit)

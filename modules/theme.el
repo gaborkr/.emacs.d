@@ -15,7 +15,7 @@
 (menu-bar-mode 1)
 
 ;; window size
-(setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
+;(setq initial-frame-alist '((top . 0) (left . 0) (width . 180) (height . 50)))
 
 (setq-default frame-title-format "%b (%f)")
 
