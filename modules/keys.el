@@ -37,5 +37,15 @@
 ;; zoom window functionality - yay!
 (define-key global-map (kbd "C-|") 'toggle-windows-split)
 
+;; delete line does not affect the kill ring
+(defun delete-line ()
+  (interactive)
+  (delete-region
+   (progn (beginning-of-line 1) (point))
+   (progn (end-of-line 1) (point)))
+  (delete-char 1))
+
+(global-set-key (kbd "<C-S-backspace>") 'delete-line)
+
 (provide 'keys)
 

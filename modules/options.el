@@ -16,4 +16,6 @@
 
 (global-auto-revert-mode 1)
 
+(setq-default indent-tabs-mode nil)
+
 (provide 'options)
