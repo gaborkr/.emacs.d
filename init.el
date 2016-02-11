@@ -41,6 +41,8 @@
     clojure-mode-extra-font-locking
     cider
     tagedit
+    company
+    ensime
 ))
 
 (dolist (p my-packages)
@@ -58,6 +60,7 @@
 (require 'init-erlang)
 (require 'init-neotree)
 (require 'init-js)
+(require 'init-scala)
 
 (message "Hi!")
 (custom-set-variables
