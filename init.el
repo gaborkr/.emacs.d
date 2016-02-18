@@ -43,6 +43,7 @@
     tagedit
     company
     ensime
+    markdown-mode
 ))
 
 (dolist (p my-packages)
