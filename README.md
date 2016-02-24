@@ -38,3 +38,12 @@ where APP is your app name. Edts will start a new Erlang node with _edts, so it 
 The config file comes straight from [Clojure the Brave](https://www.nostarch.com/clojure) - cheers!
 
 Paredit mode is enabled by default. C-left/C-right will be disabled for paredit because I'm addicted to using these keys for moving across words...
+
+## For Scala
+
+Ensime of course.
+
+## For Go
+
+Just playing around - `go-mode` for syntax highlighting only...
+
