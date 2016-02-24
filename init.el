@@ -44,6 +44,7 @@
     company
     ensime
     markdown-mode
+    go-mode
 ))
 
 (dolist (p my-packages)
@@ -62,6 +63,7 @@
 (require 'init-neotree)
 (require 'init-js)
 (require 'init-scala)
+(require 'init-go)
 
 (message "Hi!")
 (custom-set-variables
