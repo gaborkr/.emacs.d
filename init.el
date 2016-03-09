@@ -33,6 +33,7 @@
     ido-ubiquitous
     ido-vertical-mode
     helm
+    helm-ag
     neotree
     projectile
     edts
